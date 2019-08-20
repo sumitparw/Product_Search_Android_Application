@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp">
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:background="@mipmap/music_icon"-->
+                <!--android:id="@+id/image"/>-->
+        <!--</LinearLayout>-->
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/id_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Apple dgefgbqgdd  d"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40sp">
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$270"
+                    android:layout_weight="35"
+                    android:textStyle="bold"
+                    android:textColor="#9698ff"
+                    android:layout_marginTop="30sp"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_marginTop="30sp"
+                    android:id="@+id/shipping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="15sp"
+                    android:text="With Free Shipping"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/t1l2"
+            android:layout_marginBottom="10sp">
+
+            <ImageView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:background="@drawable/information_outline"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingLeft="20sp"
+                android:text="Highlights" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/div_subtitle"
+            android:layout_marginBottom="10sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="65"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Subtitle"/>
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:textSize="18sp"
+                android:paddingLeft="20sp"
+                android:text="Hi Babe"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/div_price"
+            android:layout_marginBottom="10sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="65"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Price"/>
+            <TextView
+                android:id="@+id/price1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:textSize="18sp"
+                android:paddingLeft="20sp"
+                android:text="$299"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/div_brand"
+            android:layout_marginBottom="30sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="65"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Brand"/>
+            <TextView
+                android:id="@+id/brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:textSize="18sp"
+                android:paddingLeft="20sp"
+                android:text="APPLE"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/div_specifications"
+            android:layout_marginBottom="10sp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/wrench"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingLeft="20sp"
+                android:text="Specifications"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t1l6"
+        android:layout_marginBottom="10sp"
+        android:orientation="vertical"/>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/div_itemSpecifics"-->
+            <!--android:layout_marginBottom="10sp">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/item_specifics2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="35"-->
+                <!--android:textSize="18sp"-->
+                <!--android:paddingLeft="90sp"-->
+                <!--android:paddingTop="20sp"-->
+                <!--android:text="Onsale"/>-->
+
+        <!--</LinearLayout>-->
+
+
+    </LinearLayout>
+</ScrollView>

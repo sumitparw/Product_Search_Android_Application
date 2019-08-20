@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Product Search</string>
+    <string name="title_activity_event_details">Product Details</string>
+
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string-array name="categories">
+        <item>All</item>
+        <item>Baby</item>
+        <item>Books</item>
+        <item>Clothing, Shoes and Accessories</item>
+        <item>Computers/Tablets and Networking</item>
+        <item>Health and Beauty</item>
+        <item>Music</item>
+        <item>Video Games and Consoles</item>
+    </string-array>
+
+    <!--<string-array name="units">-->
+    <!--<item>miles</item>-->
+    <!--<item>kilometers</item>-->
+    <!--</string-array>-->
+
+    <string-array name="sortingCategories">
+        <item>Default</item>
+        <item>Name</item>
+        <item>Price</item>
+        <item>Days</item>
+    </string-array>
+
+    <string-array name="sortingOrder">
+        <item>Ascending</item>
+        <item>Descending</item>
+    </string-array>
+
+</resources>

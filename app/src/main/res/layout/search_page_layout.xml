@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10sp"
+    android:padding="10sp">
+    otherLocation
+    <android.support.v7.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/auto_complete_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="text"
+        android:layout_below="@id/error2"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/otherLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/auto_complete_edit_text"
+        android:layout_marginLeft="35sp"
+
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="Keyword"
+        android:id="@+id/key"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_below="@id/key"
+        android:text="Please enter mandatory field"
+        android:textColor="#FF0000"
+        android:id="@+id/error1"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:hint="Enter Keyword"
+        android:layout_below="@+id/error1"
+        android:id="@+id/keywords"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Category"
+        android:textStyle="bold"
+        android:id="@+id/cat"
+        android:layout_below="@+id/keywords"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cat"
+        android:id="@+id/category"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Condition"
+        android:textStyle="bold"
+        android:id="@+id/condition"
+        android:layout_below="@+id/category"
+        />
+
+    <LinearLayout
+        android:id="@+id/conditionlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/condition"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"
+        android:weightSum="3">
+
+        <CheckBox
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/conditionlayout"
+            android:text="New"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/conditionlayout"
+            android:text="Used"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/conditionlayout"
+            android:layout_alignTop="@+id/conditionlayout"
+            android:text="Unspecified"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Shipping"
+        android:textStyle="bold"
+        android:id="@+id/shipping"
+        android:layout_below="@+id/conditionlayout"
+        />
+    <LinearLayout
+        android:id="@+id/shippinglayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shipping"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"
+        android:weightSum="3">
+
+        <CheckBox
+            android:id="@+id/shipping1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shippinglayout"
+            android:text="Local Pickup"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/shipping2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shippinglayout"
+            android:text="Free Shipping"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/enable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shippinglayout"
+        android:layout_marginTop="4dp"
+
+        android:weightSum="3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Enable Nearby Search"
+            android:textStyle="bold"
+            android:id="@+id/enable_nearby_search"
+            android:layout_below="@+id/enable"
+            />
+        <CheckBox
+            android:id="@+id/enable_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enable"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:inputType="number"
+        android:hint="Miles From"
+        android:layout_below="@+id/enable"
+        android:id="@+id/distance"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="From"
+        android:id="@+id/fr"
+        android:layout_below="@+id/distance"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fr"
+        android:id="@+id/fromRadioGroup"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Current Location"
+            android:id="@+id/radioHere"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other. Specify Location"
+            android:id="@+id/radioOther"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_below="@id/fromRadioGroup"
+        android:text="Please enter mandatory field"
+        android:textColor="#FF0000"
+        android:id="@+id/error2"
+        android:visibility="gone"
+        />
+
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="17sp"-->
+        <!--android:hint="Type in the Location"-->
+        <!--android:layout_below="@+id/error2"-->
+        <!--android:id="@+id/otherLocation"-->
+        <!--android:layout_marginLeft="35sp"-->
+        <!--android:enabled="false"-->
+        <!--/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otherLocation"
+        android:gravity="center_horizontal"
+        android:id="@+id/buttonLayout"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_below="@+id/category"
+            android:layout_weight="1"
+            android:id="@+id/searchBtn"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_below="@+id/clear"
+            android:layout_weight="1"
+            android:id="@+id/clearBtn"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLayout"
+        android:id="@+id/testText"/>
+
+
+</RelativeLayout>
